@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "celery-send-email"
+version = "0.1.0"
+description = ""
+authors = ["Mark Ryan <mryan.dev@outlook.com>"]
+readme = "README.md"
+packages = [{include = "celery_send_email"}]
+
+[tool.poetry.dependencies]
+python = "^3.11.1"
+celery = "^5.2.7"
+redis = "^4.4.2"
+django-celery-results = "^2.4.0"
+django-celery-beat = "^2.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
